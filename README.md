@@ -1,21 +1,28 @@
 Telegram group channel: https://t.me/efootballCheaterReport
+
 Telegram group: https://t.me/eFootballxjbt
+
 相关工具在 QQ群143552766 分享
 
 Konami’s eFootball game originally only checked the player’s region at startup. If the region was restricted (e.g., mainland China), access was blocked. After the 5.5.1 update, the restriction has been strengthened. At any point during gameplay, the access address is checked. Restricted users are shown the message: “Functionality Currently Unavailable” “CODE::C_GKCC_0019”.
+
 These checks are performed by accessing pes22-game.cs.konami.net, in a manner similar to a browser accessing a web page. Therefore, the simplest method is to set up a system proxy.
+
 Step 1: Install a local proxy tool such as V2rayN[https://github.com/2dust/v2rayN], and configure the proxy server. If you don’t have your own server, you can obtain temporary nodes from sharing websites, for example: https://openproxylist.com/v2ray/
+
 Step 2:
 
 Method 1: Set up a system-wide proxy
+
 Enable “Automatically configure system proxy” and log into the game. If you see the following output in the V2rayN log, the configuration has succeeded:
+
 accepted //pes22-game.cs.konami.net:443 [socks -> proxy]
-
-
+
 Method 2: Use Proxifier or Netch[https://github.com/netchx/netch]
+
 Since Method 1 requires a system-wide proxy, it may cause network issues with other applications. You can use Proxifier or Netch to perform a network hijack-like function. Target only the eFootball.exe application and redirect its network traffic to the listening port of the V2rayN tool (e.g., 127.0.0.1:1080).
+
 The file eFootball2024.ppx is a pre-configured profile that can be imported and used in Proxifier.
-
 
 
 
