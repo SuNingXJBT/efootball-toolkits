@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxifierProfile version="101" platform="Windows" product_id="0" product_minver="310">
+  <Options>
+    <Resolve>
+      <AutoModeDetection enabled="true" />
+      <ViaProxy enabled="false">
+        <TryLocalDnsFirst enabled="false" />
+      </ViaProxy>
+      <ExclusionList>localhost</ExclusionList>
+      <DnsUdpMode>1</DnsUdpMode>
+    </Resolve>
+    <Encryption mode="disabled" />
+    <HttpProxiesSupport enabled="false" />
+    <HandleDirectConnections enabled="false" />
+    <ConnectionLoopDetection enabled="true" />
+    <ProcessServices enabled="false" />
+    <ProcessOtherUsers enabled="false" />
+  </Options>
+  <ProxyList>
+    <Proxy id="100" type="SOCKS5">
+      <Address>127.0.0.1</Address>
+      <Port>10808</Port>
+      <Options>48</Options>
+    </Proxy>
+    <Proxy id="101" type="SOCKS5">
+      <Address>127.0.0.1</Address>
+      <Port>1080</Port>
+      <Options>48</Options>
+    </Proxy>
+  </ProxyList>
+  <ChainList />
+  <RuleList>
+    <Rule enabled="false">
+      <Name>v2ray.exe [auto-created]</Name>
+      <Applications>v2ray.exe</Applications>
+      <Action type="Direct" />
+    </Rule>
+    <Rule enabled="false">
+      <Name>Localhost</Name>
+      <Targets>localhost; 127.0.0.1; %ComputerName%</Targets>
+      <Action type="Direct" />
+    </Rule>
+    <Rule enabled="true">
+      <Name>新建</Name>
+      <Applications>efootball.exe;
+PesConsole-Shipping_console_wgd_Master.exe;</Applications>
+      <Targets>pes22-game.cs.konami.net</Targets>
+      <Action type="Proxy">100</Action>
+    </Rule>
+    <Rule enabled="false">
+      <Name>副本 </Name>
+      <Applications>efootball.exe;PesConsole-Shipping_console_wgd_Master.exe</Applications>
+      <Targets>d1ln4m3c7n87ju.cloudfront.net</Targets>
+      <Action type="Proxy">100</Action>
+    </Rule>
+    <Rule enabled="false">
+      <Name>store efootball</Name>
+      <Applications>PesConsole-Shipping_console_wgd_Master.exe;msedgewebview2.exe ;GamingServices.exe ;</Applications>
+      <Ports>443</Ports>
+      <Action type="Proxy">100</Action>
+    </Rule>
+    <Rule enabled="false">
+      <Name>新建</Name>
+      <Applications>efootball.exe</Applications>
+      <Action type="Proxy">101</Action>
+    </Rule>
+    <Rule enabled="false">
+      <Name>新建</Name>
+      <Applications>steam.exe</Applications>
+      <Targets>api.steampowered.com</Targets>
+      <Action type="Proxy">100</Action>
+    </Rule>
+    <Rule enabled="false">
+      <Name>副本 </Name>
+      <Applications>steam.exe</Applications>
+      <Action type="Proxy">100</Action>
+    </Rule>
+    <Rule enabled="false">
+      <Name>MSstore</Name>
+      <Targets>licensing.mp.microsoft.com;login.live.com;xboxlive.com;</Targets>
+      <Ports>443</Ports>
+      <Action type="Proxy">100</Action>
+    </Rule>
+    <Rule enabled="false">
+      <Name>新建</Name>
+      <Applications>start_protected_game.exe ;eldenring.exe ;GameBarPresenceWriter.exe </Applications>
+      <Ports>443</Ports>
+      <Action type="Proxy">101</Action>
+    </Rule>
+    <Rule enabled="false">
+      <Name>新建</Name>
+      <Ports>443</Ports>
+      <Action type="Proxy">100</Action>
+    </Rule>
+    <Rule enabled="false">
+      <Name>cod</Name>
+      <Applications>cod.exe; bf6.exe; eaanticheat.gameservicelauncher.exe; eaanticheat.installer.exe</Applications>
+      <Action type="Proxy">100</Action>
+    </Rule>
+    <Rule enabled="true">
+      <Name>Default</Name>
+      <Action type="Direct" />
+    </Rule>
+  </RuleList>
+</ProxifierProfile>
