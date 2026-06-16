@@ -1,0 +1,34 @@
+Telegram group channel: https://t.me/efootballCheaterReport
+Telegram group: https://t.me/eFootballxjbt
+相关工具在 QQ群143552766 分享
+
+Konami’s eFootball game originally only checked the player’s region at startup. If the region was restricted (e.g., mainland China), access was blocked. After the 5.5.1 update, the restriction has been strengthened. At any point during gameplay, the access address is checked. Restricted users are shown the message: “Functionality Currently Unavailable” “CODE::C_GKCC_0019”.
+These checks are performed by accessing pes22-game.cs.konami.net, in a manner similar to a browser accessing a web page. Therefore, the simplest method is to set up a system proxy.
+Step 1: Install a local proxy tool such as V2rayN[https://github.com/2dust/v2rayN], and configure the proxy server. If you don’t have your own server, you can obtain temporary nodes from sharing websites, for example: https://openproxylist.com/v2ray/
+Step 2:
+
+Method 1: Set up a system-wide proxy
+Enable “Automatically configure system proxy” and log into the game. If you see the following output in the V2rayN log, the configuration has succeeded:
+accepted //pes22-game.cs.konami.net:443 [socks -> proxy]
+
+
+Method 2: Use Proxifier or Netch[https://github.com/netchx/netch]
+Since Method 1 requires a system-wide proxy, it may cause network issues with other applications. You can use Proxifier or Netch to perform a network hijack-like function. Target only the eFootball.exe application and redirect its network traffic to the listening port of the V2rayN tool (e.g., 127.0.0.1:1080).
+The file eFootball2024.ppx is a pre-configured profile that can be imported and used in Proxifier.
+
+
+
+
+科乐美eFootball游戏原先只是在启动时检查玩家所在区域，如果是受限地区，比如中国大陆，则禁止接入。在5.5.1更新之后增强了该限制的功能。在任何操作的时候，都会检查接入地址。对于受限用户提示“Functionality Currently Unavailable” “CODE::C_GKCC_0019”.
+      这些检测都是通过对 pes22-game.cs.konami.net 的访问来进行的。访问模式就像浏览器访问互联网页面一样。所以最简单的模式就是设置系统代理。
+
+第一步： 安装V2rayN等本地代理工具，配置代理服务器，如果自己没有服务器可以从一些分享网站获得临时的节点，比如  https://openproxylist.com/v2ray/
+
+第二步：
+》方法1、通过设置系统全局代理
+设置成“自动配置系统代理”， 登录游戏。可以从V2rayN工具的日志输出里看到如下信息，则表示已配置成功
+accepted //pes22-game.cs.konami.net:443 [socks -> proxy]
+
+》方法2、使用Proxifier或者Netch
+由于方法1需要设置系统全局代理，可能造成其他应用网络操作的异常。可以借用Proxifier或者Netch完成类似于网络劫持的功能。只针对eFootball.exe应用程序，将该程序对网络的访问转接到V2rayN工具的监听端口，比如 127.0.0.1:1080.
+eFootball2024.ppx 文件是已经做好的配置，在Proxifier里可以导入后使用
